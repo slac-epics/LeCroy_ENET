@@ -1,0 +1,10 @@
+file ../../db/LeCroy_ENET.template
+{
+    { S="BNL", SS="test", DEV="scope1", C="0" }
+#    { S="BNL", SS="test", DEV="scope2", C="1" }
+#    { S="BNL", SS="test", DEV="scope3", C="2" }
+#    { S="BNL", SS="test", DEV="scope4", C="3" }
+#    { S="BNL", SS="test", DEV="scope5", C="4" }
+#    { S="BNL", SS="test", DEV="scope6", C="5" }
+}
+

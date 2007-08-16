@@ -1,0 +1,14 @@
+include "menuGlobal.dbd"
+include "menuConvert.dbd"
+
+include "aiRecord.dbd"
+include "aoRecord.dbd"
+include "biRecord.dbd"
+include "boRecord.dbd"
+include "mbbiRecord.dbd"
+include "mbboRecord.dbd"
+include "stringinRecord.dbd"
+include "waveformRecord.dbd"
+
+include "LeCroy_ENET.dbd"
+

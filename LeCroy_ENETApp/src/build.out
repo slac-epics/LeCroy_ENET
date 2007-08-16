@@ -1,0 +1,8 @@
+perl /afs/slac/g/lcls/build/epics/base/base-R1-0-0/configure/tools/makeMakefile.pl O.linux-x86 ../../..
+mkdir O.Common
+make -C O.linux-x86 -f ../Makefile TOP=../../.. T_A=linux-x86 install
+make[1]: Entering directory `/afs/slac.stanford.edu/g/lcls/build/epics/modules/LeCroy_ENET/Devl-Schuh/LeCroy_ENETApp/src/O.linux-x86'
+make[1]: Leaving directory `/afs/slac.stanford.edu/g/lcls/build/epics/modules/LeCroy_ENET/Devl-Schuh/LeCroy_ENETApp/src/O.linux-x86'
+make[1]: Entering directory `/afs/slac.stanford.edu/g/lcls/build/epics/modules/LeCroy_ENET/Devl-Schuh/LeCroy_ENETApp/src/O.linux-x86'
+/usr/bin/gcc -c   -D_POSIX_C_SOURCE=199506L -D_POSIX_THREADS -D_XOPEN_SOURCE=500        -D_X86_  -DUNIX  -D_BSD_SOURCE -Dlinux  -D_REENTRANT -ansi  -O3  -Wall          -g -fPIC -I. -I.. -I../../../include/os/Linux -I../../../include         ../LeCroy_drv.c 
+make[1]: Leaving directory `/afs/slac.stanford.edu/g/lcls/build/epics/modules/LeCroy_ENET/Devl-Schuh/LeCroy_ENETApp/src/O.linux-x86'

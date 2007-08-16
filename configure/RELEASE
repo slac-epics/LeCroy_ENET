@@ -1,0 +1,31 @@
+#RELEASE Location of external products
+# Run "gnumake clean uninstall install" in the application
+# top directory each time this file is changed.
+
+#TEMPLATE_TOP=$(EPICS_MBA_TEMPLATE_TOP)
+
+# The following supports installation of EDM screens
+#OPIROOT=${IOCTOP_RELEASE}/<App-directory>
+OPIROOT=${TOP}
+
+# If you don't want to install into $(TOP) then
+# define INSTALL_LOCATION_APP here
+#INSTALL_LOCATION_APP=<fullpathname>
+
+EPICS_MODULES=/afs/slac/g/lcls/build/epics/modules
+
+# ----------------------------------------------------------------------------
+# SNS LeCroy scope with ethernet hardware Support
+# ----------------------------------------------------------------------------
+# The is a common IOC component use by IOCs to provide LeCroy Ethernet Scope
+# support
+# Change the path below to point to the desired Release of the software
+LECROY_ENET=$(EPICS_MODULES)/LeCroy_ENET/Devl
+
+# EPICS_BASE usually appears last so other apps can override stuff:
+EPICS_BASE_RELEASE=/afs/slac/g/lcls/build/epics/base/base-R1-0-0
+EPICS_BASE=$(EPICS_BASE_RELEASE)
+
+#Capfast users may need the following definitions
+#CAPFAST_TEMPLATES=
+#SCH2EDIF_PATH=

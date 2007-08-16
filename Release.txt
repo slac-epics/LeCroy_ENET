@@ -1,0 +1,23 @@
+R1-6:
+This release is using EPICS R3.14.4 structure.
+The driver and device support are written to support both EPICS 3.13 and 3.14.
+Everything was tested under EPICS R3.14.4.
+
+R1-6-1:
+Clean up, remove unused modules;
+Make everything to fit into SNS environment;
+Move scopesMenu.edl from shared module to test application.
+
+R1-6-2:
+Merge common part of LeCroy_Open and LeCroy_Recover_Link to LeCroy_Init;
+String size should be limited to 40 instead of 41;
+extern "C" declaration for cplusplus;
+After slelect, read returns 0 should be also considered as failure;
+Turn sFd to -1 after close for safe;
+Check parameter;
+Fix bug: Initialization could cause memory leak if ipAddr is NULL and illegal;
+Print debug information with IP address;
+toutsec should be unsigned int;
+Platform related INIT_STRING;
+Move LECROY_DRV_DEBUG to C file;
+
