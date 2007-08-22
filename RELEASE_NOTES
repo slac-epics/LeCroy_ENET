@@ -1,3 +1,6 @@
+LeCroy_ENET_R1-0-1
+Allow waveform size to be specified in database substitution file
+
 LeCroy_ENET_R1-0-0
 This is the first SLAC release of the LeCroy scope module.  It has been modified to be operating system independent and to work with newer LeCroy scopes.
 

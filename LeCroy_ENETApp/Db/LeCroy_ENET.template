@@ -7,7 +7,7 @@ record(waveform,"$(dev):CH1") {
   field(EGU,"units")
   field(HOPR,"20.0")
   field(LOPR,"-20.0")
-  field(NELM,"1000")
+  field(NELM,"$(nelm)")
   field(FTVL,"FLOAT")
   field(DESC,"ch1 waveform")
 }
@@ -20,7 +20,7 @@ record(waveform,"$(dev):CH2") {
   field(EGU,"units")
   field(HOPR,"20.0")
   field(LOPR,"-20.0")
-  field(NELM,"1000")
+  field(NELM,"$(nelm)")
   field(FTVL,"FLOAT")
   field(DESC,"ch2 waveform")
 }
@@ -33,7 +33,7 @@ record(waveform,"$(dev):CH3") {
   field(EGU,"units")
   field(HOPR,"20.0")
   field(LOPR,"-20.0")
-  field(NELM,"1000")
+  field(NELM,"$(nelm)")
   field(FTVL,"FLOAT")
   field(DESC,"ch3 waveform")
 }
@@ -46,7 +46,7 @@ record(waveform,"$(dev):CH4") {
   field(EGU,"units")
   field(HOPR,"20.0")
   field(LOPR,"-20.0")
-  field(NELM,"1000")
+  field(NELM,"$(nelm)")
   field(FTVL,"FLOAT")
   field(DESC,"ch4 waveform")
 }
