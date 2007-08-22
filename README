@@ -1,2 +1,9 @@
-Please look into document directory.
+LeCroy_ENET Module Description:
+This module supports LeCroy oscilloscopes.
+
+Author:
+Sheng Peng (pengs@slac.stanford.edu)
+
+Documentation:
+Please see document directory.
 
