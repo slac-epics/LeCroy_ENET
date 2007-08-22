@@ -706,7 +706,7 @@ static long initMbbi(struct mbbiRecord* mbbir)
   }
 
   /* set the legal values for mbbi record of type memsizeM */
-  if (strstr(mbbir->name, "memsize"))
+  if (strstr(mbbir->name, "memsize") || strstr(mbbir->name, "MEMSIZE"))
     setbiMemSizeLegalValues(mbbir);
   
   CHECK_MBBIPARM("memsizeM");
@@ -868,7 +868,7 @@ static long initMbbo(struct mbboRecord* mbbor)
   }
 
   /* set the legal values for mbbo record of type memsizeM */
-  if (strstr(mbbor->name, "memsize"))
+  if (strstr(mbbor->name, "memsize") || strstr(mbbor->name, "MEMSIZE"))
     setboMemSizeLegalValues(mbbor);
 
   CHECK_MBBOPARM("memsizeS");

@@ -120,7 +120,7 @@
 /* includes */
 #include "LeCroy_drv.h"
 
-int     LECROY_DRV_DEBUG=4;
+int     LECROY_DRV_DEBUG=0;
 
 struct LocalThreadData
         {
@@ -777,25 +777,21 @@ int LeCroy_Read(LeCroyID lecroyid, int chnl, float *pwaveform, int pts)
 	
 	if(lecroyid==NULL) return ERROR; /* fail to LeCroy_Open */
 	
-printf( "WAVE 1\n");
 	if(lecroyid->channels==FOUR_CHANNEL_SCOPE && (chnl<1||chnl>TOTALCHNLS) )
 	{
 		lecroyid->lasterr=LECROY_ERR_READWF_CHNLNUM_ERR;
 		return(ERROR);
 	}
 
-printf( "WAVE 2\n");
 	if(lecroyid->channels==TWO_CHANNEL_SCOPE && chnl!=1 && chnl!=2 && chnl!=5 && chnl!=6)
 	{
 		lecroyid->lasterr=LECROY_ERR_READWF_CHNLNUM_ERR;
 		return(ERROR);
 	}
 
-printf( "WAVE 3\n");
 	epicsMutexLock(lecroyid->semLecroy); /* still need it cause we will touch struct */
 
 
-printf( "WAVE 4\n");
 	if(lecroyid->chanenbl[chnl-1]!=ON) 
 	{/* save network bandwith */
 		lecroyid->lasterr=LECROY_ERR_READWF_CHNL_DISABLED;
@@ -807,7 +803,6 @@ printf( "WAVE 4\n");
 	strcpy(CMD,ChannelName[chnl-1]);	/* put Cx: */
 	strcat(CMD,"WF?");
 
-printf( "WAVE 5\n");
 	if (LeCroy_Operate(lecroyid,CMD,TRUE,&prdbk,&rdbksize,READ_TIMEOUT)==ERROR)
 	{  
 		lecroyid->lasterr=LECROY_ERR_READWF_FAILED;
@@ -818,7 +813,6 @@ printf( "WAVE 5\n");
 	/* the first 8 bytes of WAVEDESC block is always "WAVEDESC" */
 	pWaveDesc=(char *)strstr(prdbk,"WAVEDESC");
 
-printf( "WAVE 6\n");
 	epicsMutexLock(lecroyid->semOp); /* Protect WAVEDESC for function like LeCroy_Get_LastTrgTime */
 
 	/* even on little endian platform, if you use CORD LO;, this will be still good */
@@ -826,7 +820,6 @@ printf( "WAVE 6\n");
 	/* actually we can release semOp here, just for saver we release it later */
 	wflength=lecroyid->channel_desc[chnl-1].LAST_VALID_PNT-lecroyid->channel_desc[chnl-1].FIRST_VALID_PNT+1;
 	
-printf( "WAVE 7: wflength=%d chnl=%d FIRST=%d LAST=%d\n", wflength, chnl, lecroyid->channel_desc[chnl-1].LAST_VALID_PNT, lecroyid->channel_desc[chnl-1].FIRST_VALID_PNT);
 
 	pWaveDataB=(signed char *)pWaveDesc + lecroyid->channel_desc[chnl-1].WAVE_DESCRIPTOR
 										+ lecroyid->channel_desc[chnl-1].USER_TEXT
@@ -840,20 +833,17 @@ printf( "WAVE 7: wflength=%d chnl=%d FIRST=%d LAST=%d\n", wflength, chnl, lecroy
 	{/* byte mode, 8 bits resolution,all signed */
 		
 		/*copy data to float array*/
-printf( "WAVE 8 [0 to %d] min(%d,%d)\n", min(pts,wflength), pts, wflength);
 		for(cploop=0;cploop<min(pts,wflength);cploop++)
 		/* for(cploop=0;cploop<pts;cploop++) */
 		{
 			pwaveform[cploop]=pWaveDataB[cploop+lecroyid->channel_desc[chnl-1].FIRST_VALID_PNT]
 				*lecroyid->channel_desc[chnl-1].VERTICAL_GAIN-lecroyid->channel_desc[chnl-1].VERTICAL_OFFSET;
-printf( "waveform[%d]=%g [%#08x]\n", cploop, pwaveform[cploop], pWaveDataB[cploop+lecroyid->channel_desc[chnl-1].FIRST_VALID_PNT]);
 		}
 	}
 	else
 	{/* word mode, up to 16 bits resolution,all signed */
 		
 		/*copy data to float array*/
-printf( "WAVE 9\n");
 		for(cploop=0;cploop<min(pts,wflength);cploop++)
 		{
 			pwaveform[cploop]=pWaveDataW[cploop+lecroyid->channel_desc[chnl-1].FIRST_VALID_PNT]
@@ -863,11 +853,9 @@ printf( "WAVE 9\n");
 
 	epicsMutexUnlock(lecroyid->semOp); /* Protect WAVEDESC for function like LeCroy_Get_LastTrgTime */
 
-printf( "WAVE 10\n");
 	free(prdbk);
 
 	epicsMutexUnlock(lecroyid->semLecroy);
-printf( "WAVE 11\n");
 
 	return (min(pts,wflength));
 }  
@@ -1019,7 +1007,16 @@ STATUS	LeCroy_Ioctl(LeCroyID lecroyid, int chnl, int op, void * parg)
 		{
 			if(strncmp(prdbk,msiz_op[loop].response,strlen(prdbk)-1)==0)	break;/*minus 1 is because prdbk end with 0x0A*/
 		}
-		*(int *)parg=msiz_op[loop].val;
+                if(loop < 14)
+		{
+                    *(int *)parg=msiz_op[loop].val;
+                }
+                else
+                {
+                    float ftempval; 
+                    sscanf(prdbk, "%g", &ftempval);
+                    *(int *)parg=(int)ftempval;
+                }
 		free(prdbk);
 		break;
 
