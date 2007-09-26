@@ -2,7 +2,8 @@
 # Run "gnumake clean uninstall install" in the application
 # top directory each time this file is changed.
 
-#TEMPLATE_TOP=$(EPICS_MBA_TEMPLATE_TOP)
+
+TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
 
 # The following supports installation of EDM screens
 #OPIROOT=${IOCTOP_RELEASE}/<App-directory>
@@ -12,20 +13,45 @@ OPIROOT=${TOP}
 # define INSTALL_LOCATION_APP here
 #INSTALL_LOCATION_APP=<fullpathname>
 
-EPICS_MODULES=/afs/slac/g/lcls/build/epics/modules
+# =============================================================
+# Define the top of the EPICS tree for your site.
+# We will build some tools/scripts that allow us to
+# change this easily when relocating software.
+# ==============================================================
+EPICS_SITE_TOP=/nfs/slac/g/lcls/build/epics
 
-# ----------------------------------------------------------------------------
+
+# =============================================================
+# Define location of module tree with respect to
+# EPICS_SITE_TOP
+# =============================================================
+EPICS_MODULES=$(EPICS_SITE_TOP)/modules
+
+
+# ==============================================================
+# Define the version of EPICS BASE that you will use
+# =============================================================
+BASE_MODULE_VERSION=base-R3-14-8-2-lcls1
+
+
+
+# =============================================================
+# Define the version of modules needed by
+# IOC apps or other Support apps
+# =============================================================
+LECROY_ENET_MODULE_VERSION=LeCroy_ENET-R1-0-1
+
+
+# -------------------------------------------------------------------
 # SNS LeCroy scope with ethernet hardware Support
-# ----------------------------------------------------------------------------
-# The is a common IOC component use by IOCs to provide LeCroy Ethernet Scope
-# support
-# Change the path below to point to the desired Release of the software
-LECROY_ENET=$(EPICS_MODULES)/LeCroy_ENET/Devl
+# -------------------------------------------------------------------
+LECROY_ENET=$(EPICS_MODULES)/LeCroy_ENET/$(LECROY_ENET_MODULE_VERSION)
 
+
+
+# =================================================================
+# Define EPICS_BASE
 # EPICS_BASE usually appears last so other apps can override stuff:
-EPICS_BASE_RELEASE=/afs/slac/g/lcls/build/epics/base/base-R1-0-0
-EPICS_BASE=$(EPICS_BASE_RELEASE)
+# =================================================================
+EPICS_BASE=$(EPICS_SITE_TOP)/base/$(BASE_MODULE_VERSION)
 
-#Capfast users may need the following definitions
-#CAPFAST_TEMPLATES=
-#SCH2EDIF_PATH=
