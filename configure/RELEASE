@@ -31,14 +31,14 @@ EPICS_MODULES=$(EPICS_SITE_TOP)/modules
 # ==============================================================
 # Define the version of EPICS BASE that you will use
 # =============================================================
-BASE_MODULE_VERSION=base-R3-14-8-2-lcls2
+BASE_MODULE_VERSION=base-R3-14-9-lcls1
 
 
 # =============================================================
 # Define the version of modules needed by
 # IOC apps or other Support apps
 # =============================================================
-LECROY_ENET_MODULE_VERSION=LeCroy_ENET-R1-0-2
+LECROY_ENET_MODULE_VERSION=LeCroy_ENET-R1-0-3
 
 
 # -------------------------------------------------------------------
