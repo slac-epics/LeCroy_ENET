@@ -1,0 +1,1788 @@
+3 1 0
+104
+73
+897
+750
+helvetica-bold-i-18.0
+1
+courier-bold-r-14.0
+2
+index
+10
+index
+3
+index
+10
+index
+25
+index
+30
+index
+5
+index
+5
+index
+10
+index
+10
+<<<empty>>>
+0
+0
+10
+0
+epics
+<<<empty>>>
+0
+0
+courier-medium-r-8.0
+0
+<<<E~O~D>>>
+activeXTextClass
+2 1 0
+763
+701
+92
+42
+index
+15
+0
+1
+index
+5
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+LeCroy Scope\nWith Ethernet\nInterface Demo
+helvetica-bold-r-12.0
+1
+1
+<<<empty>>>
+<<<E~O~D>>>
+activeGroupClass
+735
+6
+149
+106
+{
+activeGroupClass
+735
+6
+146
+48
+{
+activeMenuButtonClass
+2 4 0
+757
+28
+100
+26
+index
+10
+0
+index
+5
+0
+index
+5
+index
+10
+$(S)_$(SS):$(DEV):ldpnlstp
+courier-bold-r-18.0
+<<<empty>>>
+10
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+<<<empty>>>
+EOD
+activeXTextClass
+2 1 0
+735
+6
+150
+21
+index
+10
+0
+1
+index
+5
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+Load Panel Setup
+helvetica-bold-i-18.0
+1
+1
+<<<empty>>>
+EOD
+}
+EOD
+activeGroupClass
+737
+61
+147
+51
+{
+activeMenuButtonClass
+2 4 0
+757
+84
+107
+28
+index
+10
+0
+index
+5
+0
+index
+5
+index
+10
+$(S)_$(SS):$(DEV):svpnlstp
+courier-bold-r-18.0
+<<<empty>>>
+10
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+<<<empty>>>
+EOD
+activeXTextClass
+2 1 0
+737
+61
+150
+21
+index
+10
+0
+1
+index
+5
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+Save Panel Setup\n
+helvetica-bold-i-18.0
+1
+1
+<<<empty>>>
+EOD
+}
+EOD
+}
+<<<E~O~D>>>
+activeGroupClass
+755
+232
+109
+89
+{
+TextupdateClass
+6 0 0
+755
+292
+108
+29
+$(S)_$(SS):$(DEV):memsizeM
+0
+0
+index
+25
+1
+index
+5
+<<<empty>>>
+1
+courier-bold-r-14.0
+2
+0 1
+EOD
+activeMenuButtonClass
+2 4 0
+755
+253
+109
+31
+index
+10
+0
+index
+5
+0
+index
+5
+index
+10
+$(S)_$(SS):$(DEV):memsizeS
+courier-bold-r-14.0
+<<<empty>>>
+10
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+<<<empty>>>
+EOD
+activeXTextClass
+2 1 0
+755
+232
+109
+21
+index
+10
+0
+1
+index
+5
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+Memory Size\n
+helvetica-bold-i-18.0
+1
+1
+<<<empty>>>
+EOD
+}
+<<<E~O~D>>>
+activeGroupClass
+752
+326
+115
+93
+{
+TextupdateClass
+6 0 0
+752
+385
+115
+34
+$(S)_$(SS):$(DEV):timedivM
+4
+2
+index
+25
+1
+index
+5
+<<<empty>>>
+1
+helvetica-bold-i-18.0
+2
+0 1
+EOD
+TextentryClass
+6 0 0
+753
+345
+111
+32
+$(S)_$(SS):$(DEV):timedivS
+4
+2
+index
+25
+1
+index
+5
+<<<empty>>>
+1
+helvetica-bold-i-14.0
+2
+0 1
+EOD
+activeXTextClass
+2 1 0
+752
+326
+114
+20
+index
+10
+0
+1
+index
+5
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+Time Division\n
+helvetica-bold-i-18.0
+1
+1
+<<<empty>>>
+EOD
+}
+<<<E~O~D>>>
+activeGroupClass
+746
+517
+127
+88
+{
+activeXTextClass
+2 1 0
+746
+517
+127
+21
+index
+10
+0
+1
+index
+5
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+Trigger Source\n
+helvetica-bold-i-18.0
+1
+1
+<<<empty>>>
+EOD
+activeMenuButtonClass
+2 4 0
+770
+539
+78
+28
+index
+10
+0
+index
+5
+0
+index
+5
+index
+10
+$(S)_$(SS):$(DEV):trgsrcS
+courier-bold-r-18.0
+<<<empty>>>
+10
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+<<<empty>>>
+EOD
+TextupdateClass
+6 0 0
+769
+574
+80
+31
+$(S)_$(SS):$(DEV):trgsrcM
+0
+0
+index
+25
+1
+index
+5
+<<<empty>>>
+1
+courier-bold-r-14.0
+2
+0 1
+EOD
+}
+<<<E~O~D>>>
+activeGroupClass
+752
+424
+115
+89
+{
+TextupdateClass
+6 0 0
+764
+481
+86
+32
+$(S)_$(SS):$(DEV):trgmodeM
+0
+0
+index
+25
+1
+index
+5
+<<<empty>>>
+1
+courier-bold-r-14.0
+2
+0 1
+EOD
+activeMenuButtonClass
+2 4 0
+766
+446
+81
+31
+index
+10
+0
+index
+5
+0
+index
+5
+index
+10
+$(S)_$(SS):$(DEV):trgmodeS
+courier-bold-r-14.0
+<<<empty>>>
+10
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+<<<empty>>>
+EOD
+activeXTextClass
+2 1 0
+752
+424
+115
+21
+index
+10
+0
+1
+index
+5
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+Trigger Mode\n
+helvetica-bold-i-18.0
+1
+1
+<<<empty>>>
+EOD
+}
+<<<E~O~D>>>
+xyGraphClass
+1 0 0
+387
+304
+323
+265
+Scope Channel 4
+<<<empty>>>
+<<<empty>>>
+index
+10
+index
+5
+0
+1
+2
+0
+1
+0
+2
+0 1
+1 0
+0
+1
+0
+2
+0 0
+0.5 0
+1
+0
+2
+0 1
+1 0
+<<<empty>>>
+<<<empty>>>
+0
+courier-bold-r-14.0
+0 1
+0
+0 1
+0
+0 1
+0
+0
+0 1
+0 1
+0
+0 1
+0
+0 1
+0
+0
+0 1
+0 1
+0
+0 1
+0
+0 1
+0
+0
+0 1
+index
+10
+1
+<<<empty>>>
+$(S)_$(SS):$(DEV):ch4
+index
+76
+0
+1
+0
+0
+0
+0
+0
+<<<E~O~D>>>
+xyGraphClass
+1 0 0
+388
+6
+322
+265
+Scope Channel 2
+<<<empty>>>
+<<<empty>>>
+index
+10
+index
+5
+0
+1
+2
+0
+1
+0
+2
+0 1
+1 0
+0
+1
+0
+2
+0 0
+0.5 0
+1
+0
+2
+0 1
+1 0
+<<<empty>>>
+<<<empty>>>
+0
+courier-bold-r-14.0
+0 1
+0
+0 1
+0
+0 1
+0
+0
+0 1
+0 1
+0
+0 1
+0
+0 1
+0
+0
+0 1
+0 1
+0
+0 1
+0
+0 1
+0
+0
+0 1
+index
+10
+1
+<<<empty>>>
+$(S)_$(SS):$(DEV):ch2
+index
+26
+0
+1
+0
+0
+0
+0
+0
+<<<E~O~D>>>
+xyGraphClass
+1 0 0
+35
+5
+325
+265
+Scope Channel 1
+<<<empty>>>
+<<<empty>>>
+index
+10
+index
+5
+0
+1
+2
+0
+1
+0
+2
+0 1
+1 0
+0
+1
+0
+2
+0 1
+0.5 0
+1
+0
+2
+0 1
+1 0
+<<<empty>>>
+<<<empty>>>
+0
+courier-bold-r-14.0
+0 1
+0
+0 1
+0
+0 1
+0
+0
+0 1
+0 1
+0
+0 1
+0
+0 1
+0
+0
+0 1
+0 1
+0
+0 1
+0
+0 1
+0
+0
+0 1
+index
+10
+1
+<<<empty>>>
+$(S)_$(SS):$(DEV):ch1
+index
+21
+0
+1
+0
+0
+0
+0
+0
+<<<E~O~D>>>
+xyGraphClass
+1 0 0
+33
+305
+326
+265
+Scope Channel 3
+<<<empty>>>
+<<<empty>>>
+index
+10
+index
+5
+0
+1
+2
+0
+1
+0
+2
+0 1
+1 0
+0
+1
+0
+2
+0 0
+0.5 0
+1
+0
+2
+0 1
+1 0
+<<<empty>>>
+<<<empty>>>
+0
+courier-bold-r-14.0
+0 1
+0
+0 1
+0
+0 1
+0
+0
+0 1
+0 1
+0
+0 1
+0
+0 1
+0
+0
+0 1
+0 1
+0
+0 1
+0
+0 1
+0
+0
+0 1
+index
+10
+1
+<<<empty>>>
+$(S)_$(SS):$(DEV):ch3
+index
+16
+0
+1
+0
+0
+0
+0
+0
+<<<E~O~D>>>
+TextupdateClass
+6 0 0
+35
+274
+325
+29
+$(S)_$(SS):$(DEV):trgtimech1
+0
+0
+index
+25
+1
+index
+5
+<<<empty>>>
+1
+courier-bold-r-14.0
+2
+0 1
+<<<E~O~D>>>
+TextupdateClass
+6 0 0
+387
+273
+322
+29
+$(S)_$(SS):$(DEV):trgtimech2
+0
+0
+index
+25
+1
+index
+5
+<<<empty>>>
+1
+courier-bold-r-14.0
+2
+0 1
+<<<E~O~D>>>
+TextupdateClass
+6 0 0
+32
+576
+325
+29
+$(S)_$(SS):$(DEV):trgtimech3
+0
+0
+index
+25
+1
+index
+5
+<<<empty>>>
+1
+courier-bold-r-14.0
+2
+0 1
+<<<E~O~D>>>
+TextupdateClass
+6 0 0
+386
+574
+323
+29
+$(S)_$(SS):$(DEV):trgtimech4
+0
+0
+index
+25
+1
+index
+5
+<<<empty>>>
+1
+courier-bold-r-14.0
+2
+0 1
+<<<E~O~D>>>
+activeGroupClass
+739
+609
+141
+87
+{
+activeXTextClass
+2 1 0
+739
+609
+141
+21
+index
+10
+0
+1
+index
+5
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+Auto Calibration\n
+helvetica-bold-i-18.0
+1
+1
+<<<empty>>>
+EOD
+activeMenuButtonClass
+2 4 0
+772
+629
+75
+30
+index
+10
+0
+index
+5
+0
+index
+5
+index
+10
+$(S)_$(SS):$(DEV):autocalS
+courier-bold-r-16.0
+<<<empty>>>
+10
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+<<<empty>>>
+EOD
+TextupdateClass
+6 0 0
+771
+665
+77
+31
+$(S)_$(SS):$(DEV):autocalM
+0
+0
+index
+25
+1
+index
+5
+<<<empty>>>
+1
+courier-bold-r-14.0
+2
+0 1
+EOD
+}
+<<<E~O~D>>>
+activeGroupClass
+242
+604
+478
+77
+{
+activeXTextClass
+2 1 0
+242
+659
+57
+21
+index
+10
+0
+1
+index
+5
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+Status
+helvetica-bold-i-18.0
+1
+1
+<<<empty>>>
+EOD
+TextupdateClass
+6 0 0
+328
+658
+40
+23
+$(S)_$(SS):$(DEV):statusch1
+0
+0
+index
+25
+1
+index
+5
+<<<empty>>>
+1
+courier-bold-r-14.0
+2
+0 1
+EOD
+TextupdateClass
+6 0 0
+437
+657
+40
+23
+$(S)_$(SS):$(DEV):statusch2
+0
+0
+index
+25
+1
+index
+5
+<<<empty>>>
+1
+courier-bold-r-14.0
+2
+0 1
+EOD
+TextupdateClass
+6 0 0
+554
+656
+40
+23
+$(S)_$(SS):$(DEV):statusch3
+0
+0
+index
+25
+1
+index
+5
+<<<empty>>>
+1
+courier-bold-r-14.0
+2
+0 1
+EOD
+activeMenuButtonClass
+2 4 0
+637
+624
+83
+25
+index
+10
+0
+index
+5
+0
+index
+5
+index
+10
+$(S)_$(SS):$(DEV):enblch4
+courier-bold-r-14.0
+<<<empty>>>
+10
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+<<<empty>>>
+EOD
+activeXTextClass
+2 1 0
+631
+604
+87
+21
+index
+10
+0
+1
+index
+5
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+Channel 4
+helvetica-bold-i-18.0
+1
+1
+<<<empty>>>
+EOD
+activeMenuButtonClass
+2 4 0
+530
+624
+83
+25
+index
+10
+0
+index
+5
+0
+index
+5
+index
+10
+$(S)_$(SS):$(DEV):enblch3
+courier-bold-r-14.0
+<<<empty>>>
+10
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+<<<empty>>>
+EOD
+activeXTextClass
+2 1 0
+523
+604
+87
+21
+index
+10
+0
+1
+index
+5
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+Channel 3
+helvetica-bold-i-18.0
+1
+1
+<<<empty>>>
+EOD
+activeMenuButtonClass
+2 4 0
+416
+624
+83
+25
+index
+10
+0
+index
+5
+0
+index
+5
+index
+10
+$(S)_$(SS):$(DEV):enblch2
+courier-bold-r-14.0
+<<<empty>>>
+10
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+<<<empty>>>
+EOD
+activeXTextClass
+2 1 0
+415
+604
+87
+21
+index
+10
+0
+1
+index
+5
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+Channel 2\n
+helvetica-bold-i-18.0
+1
+1
+<<<empty>>>
+EOD
+activeXTextClass
+2 1 0
+306
+604
+87
+21
+index
+10
+0
+1
+index
+5
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+Channel 1
+helvetica-bold-i-18.0
+1
+1
+<<<empty>>>
+EOD
+activeMenuButtonClass
+2 4 0
+306
+624
+83
+25
+index
+10
+0
+index
+5
+0
+index
+5
+index
+10
+$(S)_$(SS):$(DEV):enblch1
+courier-bold-r-14.0
+<<<empty>>>
+10
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+<<<empty>>>
+EOD
+TextupdateClass
+6 0 0
+660
+657
+40
+23
+$(S)_$(SS):$(DEV):statusch4
+0
+0
+index
+25
+1
+index
+5
+<<<empty>>>
+1
+courier-bold-r-14.0
+2
+0 1
+EOD
+}
+<<<E~O~D>>>
+activeExitButtonClass
+2 1 0
+69
+720
+118
+24
+index
+131
+index
+45
+index
+128
+index
+130
+1
+0
+courier-bold-r-16.0
+EXIT
+0
+0
+<<<E~O~D>>>
+activeGroupClass
+236
+685
+485
+63
+{
+activeXTextClass
+2 1 0
+236
+699
+69
+36
+index
+10
+0
+1
+index
+5
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+Volt\nDivision
+helvetica-bold-i-18.0
+1
+1
+<<<empty>>>
+EOD
+TextupdateClass
+6 0 0
+309
+719
+80
+29
+$(S)_$(SS):$(DEV):voltdivch1M
+1
+2
+index
+25
+1
+index
+5
+<<<empty>>>
+1
+courier-bold-r-14.0
+2
+0 1
+EOD
+TextupdateClass
+6 0 0
+418
+719
+80
+29
+$(S)_$(SS):$(DEV):voltdivch2M
+1
+2
+index
+25
+1
+index
+5
+<<<empty>>>
+1
+courier-bold-r-14.0
+2
+0 1
+EOD
+TextupdateClass
+6 0 0
+529
+719
+80
+29
+$(S)_$(SS):$(DEV):voltdivch3M
+1
+2
+index
+25
+1
+index
+5
+<<<empty>>>
+1
+courier-bold-r-14.0
+2
+0 1
+EOD
+TextupdateClass
+6 0 0
+641
+719
+80
+29
+$(S)_$(SS):$(DEV):voltdivch4M
+1
+2
+index
+25
+1
+index
+5
+<<<empty>>>
+1
+courier-bold-r-14.0
+2
+0 1
+EOD
+TextentryClass
+6 0 0
+641
+685
+80
+32
+$(S)_$(SS):$(DEV):voltdivch4S
+1
+2
+index
+25
+1
+index
+5
+<<<empty>>>
+1
+courier-bold-r-14.0
+2
+0 1
+EOD
+TextentryClass
+6 0 0
+530
+685
+79
+32
+$(S)_$(SS):$(DEV):voltdivch3S
+1
+2
+index
+25
+1
+index
+5
+<<<empty>>>
+1
+courier-bold-r-14.0
+2
+0 1
+EOD
+TextentryClass
+6 0 0
+419
+685
+79
+32
+$(S)_$(SS):$(DEV):voltdivch2S
+1
+2
+index
+25
+1
+index
+5
+<<<empty>>>
+1
+courier-bold-r-14.0
+2
+0 1
+EOD
+TextentryClass
+6 0 0
+309
+685
+79
+32
+$(S)_$(SS):$(DEV):voltdivch1S
+1
+2
+index
+25
+1
+index
+5
+<<<empty>>>
+1
+courier-bold-r-14.0
+2
+0 1
+EOD
+}
+<<<E~O~D>>>
+activeGroupClass
+0
+612
+226
+105
+{
+activeXTextClass
+2 1 0
+9
+693
+64
+21
+index
+10
+0
+1
+index
+5
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+IP Addr
+helvetica-bold-i-18.0
+1
+1
+<<<empty>>>
+EOD
+activeXTextClass
+2 1 0
+0
+670
+83
+21
+index
+10
+0
+1
+index
+5
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+Version #
+helvetica-bold-i-18.0
+1
+1
+<<<empty>>>
+EOD
+activeXTextClass
+2 1 0
+8
+642
+66
+21
+index
+10
+0
+1
+index
+5
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+Serial #
+helvetica-bold-i-18.0
+1
+1
+<<<empty>>>
+EOD
+activeXTextClass
+2 1 0
+15
+617
+53
+21
+index
+10
+0
+1
+index
+5
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+Model
+helvetica-bold-i-18.0
+1
+1
+<<<empty>>>
+EOD
+TextupdateClass
+6 0 0
+86
+692
+155
+25
+$(S)_$(SS):$(DEV):ipaddr
+0
+0
+index
+25
+1
+index
+5
+<<<empty>>>
+1
+courier-bold-r-14.0
+2
+0 1
+EOD
+TextupdateClass
+6 0 0
+86
+665
+155
+25
+$(S)_$(SS):$(DEV):version
+0
+0
+index
+25
+1
+index
+5
+<<<empty>>>
+1
+courier-bold-r-14.0
+2
+0 1
+EOD
+TextupdateClass
+6 0 0
+86
+639
+155
+25
+$(S)_$(SS):$(DEV):serial
+0
+0
+index
+25
+1
+index
+5
+<<<empty>>>
+1
+courier-bold-r-14.0
+2
+0 1
+EOD
+TextupdateClass
+6 0 0
+86
+612
+155
+25
+$(S)_$(SS):$(DEV):model
+0
+0
+index
+25
+1
+index
+5
+<<<empty>>>
+1
+courier-bold-r-14.0
+2
+0 1
+EOD
+}
+<<<E~O~D>>>
+activeGroupClass
+754
+174
+110
+53
+{
+activeButtonClass
+2 4 0
+766
+195
+81
+32
+index
+10
+0
+index
+5
+index
+5
+index
+10
+index
+5
+index
+10
+$(S)_$(SS):$(DEV):recoverlink
+<<<empty>>>
+Recover
+Recover
+1
+4
+1
+0
+courier-bold-r-12.0
+<<<empty>>>
+0
+0
+0
+0
+3
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+<<<empty>>>
+EOD
+activeXTextClass
+2 1 0
+754
+174
+110
+21
+index
+10
+0
+1
+index
+5
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+Recover Link
+helvetica-bold-i-18.0
+1
+1
+<<<empty>>>
+EOD
+}
+<<<E~O~D>>>
+activeGroupClass
+759
+117
+100
+51
+{
+TextupdateClass
+6 0 0
+759
+136
+100
+32
+$(S)_$(SS):$(DEV):linkstatusM
+0
+0
+index
+25
+1
+index
+5
+<<<empty>>>
+1
+courier-bold-r-14.0
+2
+0 1
+EOD
+activeXTextClass
+2 1 0
+760
+117
+98
+21
+index
+10
+0
+1
+index
+5
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+Link Status
+helvetica-bold-i-18.0
+1
+1
+<<<empty>>>
+EOD
+}
+<<<E~O~D>>>

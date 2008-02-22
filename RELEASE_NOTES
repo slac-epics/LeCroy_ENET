@@ -1,3 +1,8 @@
+LeCroy_ENET_R1-0-3-1:
+Cosmetics changes to conform to LCLS standard
+Built against EPICS R3.14.9 and RTEMS 4.7.1 (base-R3-14-9-lcls1)
+
+
 LeCroy_ENET_R1-0-3:
 Built against EPICS R3.14.9 and RTEMS 4.7.1 (base-R3-14-9-lcls1)
 
