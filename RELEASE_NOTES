@@ -1,3 +1,22 @@
+#==============================================================
+#
+#  Name: RELEASE_NOTES
+#
+#  Rem: This files describes release notes for
+#       the LeCroy Ethernet driver and device support.
+#
+#  Auth: dd-mmm-yyyy, Sheng Peng         (PENGS)
+#  Rev:  dd-mmm-yyyy, Reviewer's Name    (USERNAME)
+#--------------------------------------------------------------
+#  Mod:
+#        29-Aug-2009, K. Luchini         (LUCHINI):
+#           release LeCroy_ENET-R2-0-0
+#
+#==============================================================
+#
+LeCroy_ENET-R2-0-0:  
+Built against EPICS R3.14.8.2 and RTEMS 4.9.1 (base-R3-14-8-2-lcls3)
+
 LeCroy_ENET_R1-0-3-1:
 Cosmetics changes to conform to LCLS standard
 Built against EPICS R3.14.9 and RTEMS 4.7.1 (base-R3-14-9-lcls1)
@@ -13,7 +32,8 @@ LeCroy_ENET_R1-0-1
 Allow waveform size to be specified in database substitution file
 
 LeCroy_ENET_R1-0-0
-This is the first SLAC release of the LeCroy scope module.  It has been modified to be operating system independent and to work with newer LeCroy scopes.
+This is the first SLAC release of the LeCroy scope module.  
+It has been modified to be operating system independent and to work with newer LeCroy scopes.
 
 R1-6-2:
 Merge common part of LeCroy_Open and LeCroy_Recover_Link to LeCroy_Init;
