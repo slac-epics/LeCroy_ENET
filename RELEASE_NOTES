@@ -9,11 +9,16 @@
 #  Rev:  dd-mmm-yyyy, Reviewer's Name    (USERNAME)
 #--------------------------------------------------------------
 #  Mod:
+#        23-Feb-2010, K. Luchini         (LUCHINI):
+#           release LeCroy_ENET-R2-1-0
 #        29-Aug-2009, K. Luchini         (LUCHINI):
 #           release LeCroy_ENET-R2-0-0
 #
 #==============================================================
 #
+LeCroy_ENET-R2-1-0:  
+Built against EPICS R3.14.8.2 and RTEMS 4.9.5 (base-R3-14-8-2-lcls5)
+
 LeCroy_ENET-R2-0-0:  
 Built against EPICS R3.14.8.2 and RTEMS 4.9.1 (base-R3-14-8-2-lcls3)
 
