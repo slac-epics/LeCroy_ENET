@@ -18,6 +18,9 @@
 #
 #==============================================================
 #
+LeCroy_ENET-R2-2-1:
+Use new RELEASE_SITE file.
+
 LeCroy_ENET-R2-2-0:  
 Built against EPICS R3.14.8.2 and RTEMS 4.9.4 (base-R3-14-8-2-lcls6)
 
