@@ -9,6 +9,8 @@
 #  Rev:  dd-mmm-yyyy, Reviewer's Name    (USERNAME)
 #--------------------------------------------------------------
 #  Mod:
+#		 16-Jul-2014, S. Condamoor       (SCONDAM)
+#			Release  LeCroy_ENET-R2-3-0
 #        19-Mar-2010, S. Hoobler         (SONYA):
 #           release LeCroy_ENET-R2-2-0
 #        23-Feb-2010, K. Luchini         (LUCHINI):
@@ -18,6 +20,9 @@
 #
 #==============================================================
 #
+LeCroy_ENET-R2-3-0
+	Define min() as macro in LeCroy_drv.h which is not part of ANSI C Standard Library.
+	
 LeCroy_ENET-R2-2-1:
 Use new RELEASE_SITE file.
 

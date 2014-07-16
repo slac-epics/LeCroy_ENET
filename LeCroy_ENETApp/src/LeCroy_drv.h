@@ -434,6 +434,9 @@ const static char Error_Msg[50][256]=
 	/*29*/	"Channel number is out of range in LeCroy_Get_LastTrgTime!\n"
 /* To add new_command or new_function, you might want more error message */
 };
+#ifndef min
+#define min(x, y) (((x) < (y)) ? (x) : (y))
+#endif
 
 #ifdef __cplusplus
 }
