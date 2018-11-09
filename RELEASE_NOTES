@@ -20,6 +20,9 @@
 #
 #==============================================================
 #
+R2.4.0
+	First version with the new Git Workflow.
+
 LeCroy_ENET-R2-3-0
 	Define min() as macro in LeCroy_drv.h which is not part of ANSI C Standard Library.
 	
