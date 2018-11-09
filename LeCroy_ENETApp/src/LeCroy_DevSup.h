@@ -9,7 +9,7 @@
 #define	_INC_LeCroy_DevSup
 
 /*include*/
-#if EPICS_VERSION>=3 && EPICS_REVISION>=14
+#if EPICS_VERSION>=3 && EPICS_REVISION>=14 || EPICS_VERSION >= 7
 
 #else
         #include "vxWorks.h"
