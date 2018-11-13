@@ -20,6 +20,8 @@
 #
 #==============================================================
 #
+R2.4.0 Force tag: fixing epics version check for epics 7
+
 R2.4.0
 	First version with the new Git Workflow.
 

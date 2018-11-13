@@ -116,7 +116,7 @@ VME_DEV_SUP_SET devMbboLT364= {6, NULL, NULL, initMbbo, NULL, writeMbbo, NULL};
 VME_DEV_SUP_SET devAoLT364=   {6, NULL, NULL, initAo, NULL, writeAo, NULL};
 VME_DEV_SUP_SET devAiLT364=   {6, NULL, NULL, initAi, aiIoinitInfo, readAi, NULL};
 VME_DEV_SUP_SET devStringInLT364= {6, NULL, NULL, initStringIn, NULL, readStringIn, NULL};
-#if     EPICS_VERSION>=3 && EPICS_REVISION>=14
+#if     (EPICS_VERSION>=3 && EPICS_REVISION>=14) || EPICS_VERSION >=7
 epicsExportAddress(dset, devWfLT364);
 epicsExportAddress(dset, devBoLT364);
 epicsExportAddress(dset, devBiLT364);
