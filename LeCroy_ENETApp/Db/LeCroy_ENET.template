@@ -3,7 +3,7 @@ record(waveform,"$(dev):CH1") {
   field(SCAN,".1 second")
   field(DTYP,"LT364")
   field(PREC,"2")
-  field(INP,"VME_IO #C$(C) S1@")
+  field(INP,"#C$(C) S1@")
   field(EGU,"units")
   field(HOPR,"20.0")
   field(LOPR,"-20.0")
@@ -16,7 +16,7 @@ record(waveform,"$(dev):CH2") {
   field(SCAN,".1 second")
   field(DTYP,"LT364")
   field(PREC,"2")
-  field(INP,"VME_IO #C$(C) S2@")
+  field(INP,"#C$(C) S2@")
   field(EGU,"units")
   field(HOPR,"20.0")
   field(LOPR,"-20.0")
@@ -29,7 +29,7 @@ record(waveform,"$(dev):CH3") {
   field(SCAN,".1 second")
   field(DTYP,"LT364")
   field(PREC,"2")
-  field(INP,"VME_IO #C$(C) S3@")
+  field(INP,"#C$(C) S3@")
   field(EGU,"units")
   field(HOPR,"20.0")
   field(LOPR,"-20.0")
@@ -42,7 +42,7 @@ record(waveform,"$(dev):CH4") {
   field(SCAN,".1 second")
   field(DTYP,"LT364")
   field(PREC,"2")
-  field(INP,"VME_IO #C$(C) S4@")
+  field(INP,"#C$(C) S4@")
   field(EGU,"units")
   field(HOPR,"20.0")
   field(LOPR,"-20.0")
@@ -56,14 +56,14 @@ record(waveform,"$(dev):CH4") {
 record(bo,"$(dev):RESET") {
   field(DTYP,"LT364")
   field(DESC,"Reset All Channels")
-  field(OUT,"VME_IO #C$(C) S0@reset")
+  field(OUT,"#C$(C) S0@reset")
   field(ZNAM,"Reset")
 }
 
 record(bo,"$(dev):ENBLCH1") {
   field(DESC,"Enable/Disable channel")
   field(DTYP,"LT364")
-  field(OUT,"VME_IO #C$(C) S1@enblch1")
+  field(OUT,"#C$(C) S1@enblch1")
   field(ZNAM,"ON")
   field(ONAM,"OFF")
 }
@@ -71,7 +71,7 @@ record(bo,"$(dev):ENBLCH1") {
 record(bo,"$(dev):ENBLCH2") {
   field(DESC,"Enable/Disable channel")
   field(DTYP,"LT364")
-  field(OUT,"VME_IO #C$(C) S2@enblch2")
+  field(OUT,"#C$(C) S2@enblch2")
   field(ZNAM,"ON")
   field(ONAM,"OFF")
 }
@@ -79,7 +79,7 @@ record(bo,"$(dev):ENBLCH2") {
 record(bo,"$(dev):ENBLCH3") {
   field(DESC,"Enable/Disable channel")
   field(DTYP,"LT364")
-  field(OUT,"VME_IO #C$(C) S3@enblch3")
+  field(OUT,"#C$(C) S3@enblch3")
   field(ZNAM,"ON")
   field(ONAM,"OFF")
 }
@@ -87,7 +87,7 @@ record(bo,"$(dev):ENBLCH3") {
 record(bo,"$(dev):ENBLCH4") {
   field(DESC,"Enable/Disable channel")
   field(DTYP,"LT364")
-  field(OUT,"VME_IO #C$(C) S4@enblch4")
+  field(OUT,"#C$(C) S4@enblch4")
   field(ZNAM,"ON")
   field(ONAM,"OFF")
 }
@@ -95,7 +95,7 @@ record(bo,"$(dev):ENBLCH4") {
 record(bo,"$(dev):AUTOCALS") {
   field(DESC,"Disable/Enable Auto Cal.")
   field(DTYP,"LT364")
-  field(OUT,"VME_IO #C$(C) S0@autocalS")
+  field(OUT,"#C$(C) S0@autocalS")
   field(ZNAM,"ON")
   field(ONAM,"OFF")
 }
@@ -104,7 +104,7 @@ record(bi,"$(dev):AUTOCALM") {
   field(DESC,"Readback of Auto Cal.")
   field(SCAN,".5 second")
   field(DTYP,"LT364")
-  field(INP,"VME_IO #C$(C) S0@autocalM")
+  field(INP,"#C$(C) S0@autocalM")
   field(ZNAM,"OFF")
   field(ONAM,"ON")
 }
@@ -113,7 +113,7 @@ record(bi,"$(dev):STATUSCH1") {
   field(DESC,"Channel Status (on/off)")
   field(SCAN,".5 second")
   field(DTYP,"LT364")
-  field(INP,"VME_IO #C$(C) S1@statusch1")
+  field(INP,"#C$(C) S1@statusch1")
   field(ZNAM,"OFF")
   field(ONAM,"ON")
 }
@@ -122,7 +122,7 @@ record(bi,"$(dev):STATUSCH2") {
   field(DESC,"Channel Status (on/off)")
   field(SCAN,".5 second")
   field(DTYP,"LT364")
-  field(INP,"VME_IO #C$(C) S2@statusch2")
+  field(INP,"#C$(C) S2@statusch2")
   field(ZNAM,"OFF")
   field(ONAM,"ON")
 }
@@ -131,7 +131,7 @@ record(bi,"$(dev):STATUSCH3") {
   field(DESC,"Channel Status (on/off)")
   field(SCAN,".5 second")
   field(DTYP,"LT364")
-  field(INP,"VME_IO #C$(C) S3@statusch3")
+  field(INP,"#C$(C) S3@statusch3")
   field(ZNAM,"OFF")
   field(ONAM,"ON")
 }
@@ -140,7 +140,7 @@ record(bi,"$(dev):STATUSCH4") {
   field(DESC,"Channel Status (on/off)")
   field(SCAN,".5 second")
   field(DTYP,"LT364")
-  field(INP,"VME_IO #C$(C) S4@statusch4")
+  field(INP,"#C$(C) S4@statusch4")
   field(ZNAM,"OFF")
   field(ONAM,"ON")
 }
@@ -148,21 +148,21 @@ record(bi,"$(dev):STATUSCH4") {
 record(mbbo,"$(dev):MEMSIZES") {
   field(DESC,"waveform length")
   field(DTYP,"LT364")
-  field(OUT,"VME_IO #C$(C) S0@memsizeS")
+  field(OUT,"#C$(C) S0@memsizeS")
 }
 
 record(mbbi,"$(dev):MEMSIZEM") {
   field(DESC,"waveform length")
   field(SCAN,".5 second")
   field(DTYP,"LT364")
-  field(INP,"VME_IO #C$(C) S0@memsizeM")
+  field(INP,"#C$(C) S0@memsizeM")
 }
 
 record(mbbi,"$(dev):LINKSTATUSM") {
   field(DESC,"link status")
   field(SCAN,".5 second")
   field(DTYP,"LT364")
-  field(INP,"VME_IO #C$(C) S0@linkstatusM")
+  field(INP,"#C$(C) S0@linkstatusM")
   field(ZRVL,"0")
   field(ONVL,"1")
   field(TWVL,"2")
@@ -176,14 +176,14 @@ record(mbbi,"$(dev):LINKSTATUSM") {
 record(bo,"$(dev):RECOVERLINK") {
   field(DESC,"recover link")
   field(DTYP,"LT364")
-  field(OUT,"VME_IO #C$(C) S0@recoverlink")
+  field(OUT,"#C$(C) S0@recoverlink")
   field(ZNAM,"Recover")
 }
 
 record(ao,"$(dev):TIMEDIVS") {
   field(DESC,"time division (seconds)")
   field(DTYP,"LT364")
-  field(OUT,"VME_IO #C$(C) S0@timedivS")
+  field(OUT,"#C$(C) S0@timedivS")
   field(PINI,"NO")
 }
 
@@ -191,35 +191,35 @@ record(ai,"$(dev):TIMEDIVM") {
   field(DESC,"time division (seconds)")
   field(SCAN,".5 second")
   field(DTYP,"LT364")
-  field(INP,"VME_IO #C$(C) S0@timedivM")
+  field(INP,"#C$(C) S0@timedivM")
 }
 
 record(ai,"$(dev):VOLTDIVCH1M") {
   field(DESC,"volt division (volts)")
   field(SCAN,".5 second")
   field(DTYP,"LT364")
-  field(INP,"VME_IO #C$(C) S1@voltdivch1M")
+  field(INP,"#C$(C) S1@voltdivch1M")
 }
 
 record(ai,"$(dev):VOLTDIVCH2M") {
   field(DESC,"volt division (volts)")
   field(SCAN,".5 second")
   field(DTYP,"LT364")
-  field(INP,"VME_IO #C$(C) S2@voltdivch2M")
+  field(INP,"#C$(C) S2@voltdivch2M")
 }
 
 record(ai,"$(dev):VOLTDIVCH3M") {
   field(DESC,"volt division (volts)")
   field(SCAN,".5 second")
   field(DTYP,"LT364")
-  field(INP,"VME_IO #C$(C) S3@voltdivch3M")
+  field(INP,"#C$(C) S3@voltdivch3M")
 }
 
 record(ai,"$(dev):VOLTDIVCH4M") {
   field(DESC,"volt division (volts)")
   field(SCAN,".5 second")
   field(DTYP,"LT364")
-  field(INP,"VME_IO #C$(C) S4@voltdivch4M")
+  field(INP,"#C$(C) S4@voltdivch4M")
 }
 
 record(stringin,"$(dev):MODEL") {
@@ -227,7 +227,7 @@ record(stringin,"$(dev):MODEL") {
   field(DTYP,"LT364")
   field(SCAN,"10 second")
   field(PINI,"YES")
-  field(INP,"VME_IO #C$(C) S0@model")
+  field(INP,"#C$(C) S0@model")
 }
 
 record(stringin,"$(dev):SERIAL") {
@@ -235,7 +235,7 @@ record(stringin,"$(dev):SERIAL") {
   field(DTYP,"LT364")
   field(SCAN,"10 second")
   field(PINI,"YES")
-  field(INP,"VME_IO #C$(C) S0@serial")
+  field(INP,"#C$(C) S0@serial")
 }
 
 record(stringin,"$(dev):VERSION") {
@@ -243,7 +243,7 @@ record(stringin,"$(dev):VERSION") {
   field(DTYP,"LT364")
   field(SCAN,"10 second")
   field(PINI,"YES")
-  field(INP,"VME_IO #C$(C) S0@version")
+  field(INP,"#C$(C) S0@version")
 }
 
 record(stringin,"$(dev):IPADDR") {
@@ -251,70 +251,70 @@ record(stringin,"$(dev):IPADDR") {
   field(DTYP,"LT364")
   field(SCAN,"10 second")
   field(PINI,"YES")
-  field(INP,"VME_IO #C$(C) S0@ipaddr")
+  field(INP,"#C$(C) S0@ipaddr")
 }
 
 record(stringin,"$(dev):TRGTIMECH1") {
   field(DESC,"Last Trigger Time")
   field(DTYP,"LT364")
   field(SCAN,".1 second")
-  field(INP,"VME_IO #C$(C) S1@trgtimech1")
+  field(INP,"#C$(C) S1@trgtimech1")
 }
 
 record(stringin,"$(dev):TRGTIMECH2") {
   field(DESC,"Last Trigger Time")
   field(DTYP,"LT364")
   field(SCAN,".1 second")
-  field(INP,"VME_IO #C$(C) S2@trgtimech2")
+  field(INP,"#C$(C) S2@trgtimech2")
 }
 
 record(stringin,"$(dev):TRGTIMECH3") {
   field(DESC,"Last Trigger Time")
   field(DTYP,"LT364")
   field(SCAN,".1 second")
-  field(INP,"VME_IO #C$(C) S3@trgtimech3")
+  field(INP,"#C$(C) S3@trgtimech3")
 }
 
 record(stringin,"$(dev):TRGTIMECH4") {
   field(DESC,"Last Trigger Time")
   field(DTYP,"LT364")
   field(SCAN,".1 second")
-  field(INP,"VME_IO #C$(C) S4@trgtimech4")
+  field(INP,"#C$(C) S4@trgtimech4")
 }
 
 record(ao,"$(dev):VOLTDIVCH1S") {
   field(DESC,"volt division (volts)")
   field(PINI,"NO")
   field(DTYP,"LT364")
-  field(OUT,"VME_IO #C$(C) S1@voltdivch1S")
+  field(OUT,"#C$(C) S1@voltdivch1S")
 }
 
 record(ao,"$(dev):VOLTDIVCH2S") {
   field(DESC,"volt division (volts)")
   field(PINI,"NO")
   field(DTYP,"LT364")
-  field(OUT,"VME_IO #C$(C) S2@voltdivch2S")
+  field(OUT,"#C$(C) S2@voltdivch2S")
 }
 
 record(ao,"$(dev):VOLTDIVCH3S") {
   field(DESC,"volt division (volts)")
   field(PINI,"NO")
   field(DTYP,"LT364")
-  field(OUT,"VME_IO #C$(C) S3@voltdivch3S")
+  field(OUT,"#C$(C) S3@voltdivch3S")
 }
 
 record(ao,"$(dev):VOLTDIVCH4S") {
   field(DESC,"volt division (volts)")
   field(PINI,"NO")
   field(DTYP,"LT364")
-  field(OUT,"VME_IO #C$(C) S4@voltdivch4S")
+  field(OUT,"#C$(C) S4@voltdivch4S")
 }
 
 record(mbbi,"$(dev):TRGMODEM") {
   field(DESC,"trigger mode")
   field(SCAN,".5 second")
   field(DTYP,"LT364")
-  field(INP,"VME_IO #C$(C) S0@trgmodeM")
+  field(INP,"#C$(C) S0@trgmodeM")
   field(ZRVL,"0")
   field(ONVL,"1")
   field(TWVL,"2")
@@ -328,7 +328,7 @@ record(mbbi,"$(dev):TRGMODEM") {
 record(mbbo,"$(dev):TRGMODES") {
   field(DESC,"trigger mode")
   field(DTYP,"LT364")
-  field(OUT,"VME_IO #C$(C) S0@trgmodeS")
+  field(OUT,"#C$(C) S0@trgmodeS")
   field(ZRVL,"0")
   field(ONVL,"1")
   field(TWVL,"2")
@@ -342,7 +342,7 @@ record(mbbo,"$(dev):TRGMODES") {
 record(mbbo,"$(dev):TRGSRCS") {
   field(DESC,"trigger source")
   field(DTYP,"LT364")
-  field(OUT,"VME_IO #C$(C) S0@trgsrcS")
+  field(OUT,"#C$(C) S0@trgsrcS")
   field(ZRVL,"0")
   field(ONVL,"1")
   field(TWVL,"2")
@@ -359,7 +359,7 @@ record(mbbi,"$(dev):TRGSRCM") {
   field(DESC,"trigger source")
   field(SCAN,".5 second")
   field(DTYP,"LT364")
-  field(INP,"VME_IO #C$(C) S0@trgsrcM")
+  field(INP,"#C$(C) S0@trgsrcM")
   field(ZRVL,"0")
   field(ONVL,"1")
   field(TWVL,"2")
@@ -375,7 +375,7 @@ record(mbbi,"$(dev):TRGSRCM") {
 record(mbbo,"$(dev):LDPNLSTP") {
   field(DESC,"load panel setup")
   field(DTYP,"LT364")
-  field(OUT,"VME_IO #C$(C) S0@ldpnlstp")
+  field(OUT,"#C$(C) S0@ldpnlstp")
   field(ZRVL,"0")
   field(ONVL,"1")
   field(TWVL,"2")
@@ -391,7 +391,7 @@ record(mbbo,"$(dev):LDPNLSTP") {
 record(mbbo,"$(dev):SVPNLSTP") {
   field(DESC,"save panel setup")
   field(DTYP,"LT364")
-  field(OUT,"VME_IO #C$(C) S0@svpnlstp")
+  field(OUT,"#C$(C) S0@svpnlstp")
   field(ZRVL,"1")
   field(ONVL,"2")
   field(TWVL,"3")
